@@ -41,7 +41,7 @@
             <a href="#" class="hover:underline decoration-4 decoration-[#00ff66]">LOOKBOOK</a>
             <a href="#" class="hover:underline decoration-4 decoration-[#00ff66]">SHOPS</a>
         </nav>
-        <button class="bg-[#00ff66] text-black font-bold px-4 py-2 border-2 border-black neo-shadow hover:translate-y-1 hover:shadow-none transition-all uppercase text-sm">
+        <button onclick="toggleModal(true)" class="bg-[#00ff66] text-black font-bold px-4 py-2 border-2 border-black neo-shadow hover:translate-y-1 hover:shadow-none transition-all uppercase text-sm">
             Join the Club ★
         </button>
     </header>
@@ -184,6 +184,46 @@
             }
         `;
         document.head.appendChild(style);
+
+        function toggleModal(show) {
+    const modal = document.getElementById('club-modal');
+    if (show) {
+        modal.classList.remove('hidden');
+    } else {
+        modal.classList.add('hidden');
+    }
+}
     </script>
+
+    <div id="club-modal" class="hidden fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div class="bg-[#14141b] border-4 border-[#ff007f] p-6 max-w-md w-full neo-shadow-neon relative">
+        <button onclick="toggleModal(false)" class="absolute top-2 right-2 bg-[#ff007f] text-black font-black border-2 border-black w-8 h-8 flex items-center justify-center hover:bg-white transition-all">
+            ✕
+        </button>
+
+        <div class="text-center space-y-4">
+            <span class="bg-[#00ff66] text-black text-xs font-bold px-2 py-0.5 uppercase tracking-widest inline-block border-2 border-black pixel-font">
+                // ACCESS GRANTED
+            </span>
+            <h3 class="text-2xl font-extrabold uppercase text-[#00ff66] tracking-tight">Únete a la Disrupción</h3>
+            <p class="text-gray-400 text-xs font-medium">Deja tu mail para recibir updates de eventos o solo para ser cool</p>
+        </div>
+
+        <form action="https://api.web3forms.com/submit" method="POST" class="mt-6 space-y-4">
+            <input type="hidden" name="access_key" value="63b550b1-f24f-4066-8759-9ca78d31f195">
+            <input type="hidden" name="from_name" value="Harajukonejo Club">
+
+            <div>
+                <label class="block text-xs font-bold uppercase mb-1 text-gray-300 pixel-font">Tu Email_</label>
+                <input type="email" name="email" required placeholder="tu-mail@caos.com"
+                       class="w-full bg-black border-2 border-white p-2 text-white font-bold focus:outline-none focus:border-[#00ff66] text-sm">
+            </div>
+
+            <button type="submit" class="w-full bg-[#ff007f] text-black font-black py-2.5 border-4 border-black neo-shadow hover:translate-y-0.5 hover:shadow-[2px_2px_0px_0px_#000] active:translate-y-1 active:shadow-none transition-all uppercase text-sm tracking-wider">
+                REGISTRARME_
+            </button>
+        </form>
+    </div>
+</div>
 </body>
 </html>
