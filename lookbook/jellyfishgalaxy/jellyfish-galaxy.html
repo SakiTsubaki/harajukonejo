@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo de Perfil // Jellyfish Galaxy</title>
+
+    <link rel="icon" href="../../imgs/harajukonejo-ico.ico" type="image/ico">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght=500;700&family=DotGothic16&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #0d0d11;
+            background-image: radial-gradient(#00ff66 0.5px, transparent 0.5px), radial-gradient(#ff007f 0.5px, #0d0d11 0.5px);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px;
+        }
+        .pixel-font {
+            font-family: 'DotGothic16', sans-serif;
+        }
+        .neo-shadow-black {
+            box-shadow: 6px 6px 0px 0px #000;
+        }
+        .neo-shadow-pink {
+            box-shadow: 6px 6px 0px 0px #ff007f;
+        }
+        .neo-shadow-neon {
+            box-shadow: 6px 6px 0px 0px #00ff66;
+        }
+        /* Custom scrollbar radical */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0d0d11;
+            border-left: 4px solid #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #00ff66;
+            border: 3px solid #0d0d11;
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen p-4 md:p-8 selection:bg-[#ff007f] selection:text-white">
+
+    <header class="max-w-6xl mx-auto mb-10 flex justify-between items-center bg-[#00ff66] border-4 border-black p-4 neo-shadow-black">
+        <a href="../../index.html" class="text-xl font-bold uppercase tracking-wider pixel-font text-black hover:text-white transition-colors">
+            ← VOLVER_AL_NÚCLEO
+        </a>
+        <h1 class="text-xl font-bold uppercase tracking-wider pixel-font text-black hidden md:block">
+            INSPECCIÓN_DE_NODO // JELLYFISH_GALAXY
+        </h1>
+        <div class="bg-black text-[#00ff66] px-3 py-1 font-mono text-xs border-2 border-black pixel-font animate-pulse">
+            STATUS: ACTIVE
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto space-y-10">
+
+        <section class="bg-[#14141b] border-4 border-black neo-shadow-pink overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-12">
+
+                <div class="md:col-span-5 h-96 md:h-full bg-gray-900 border-b-4 md:border-b-0 md:border-r-4 border-black relative">
+                    <img src="jellyfish-galaxy-2.png" alt="Jellyfish Galaxy Principal" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent z-10"></div>
+                    <div class="absolute bottom-4 left-4 bg-black text-[#ff007f] border border-[#ff007f] px-3 py-1 text-xs font-mono pixel-font">
+                        MODEL_FILE_01
+                    </div>
+                </div>
+
+                <div class="md:col-span-7 p-6 md:p-8 flex flex-col justify-between space-y-6">
+                    <div>
+                        <span class="text-[#00ff66] pixel-font text-sm block mb-1">// EXPEDIENTE_ESTILO</span>
+                        <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tight text-white mb-6">
+                            Jellyfish Galaxy
+                        </h2>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 border-y-2 border-dashed border-gray-800 py-6 my-4 font-mono text-sm">
+                            <div class="space-y-1">
+                                <span class="text-gray-500 block text-xs font-sans uppercase tracking-wider">Nombre</span>
+                                <span class="text-white text-base font-bold">Jellyfish Galaxy</span>
+                            </div>
+                            <div class="space-y-1">
+                                <span class="text-gray-500 block text-xs font-sans uppercase tracking-wider">Edad</span>
+                                <span class="text-white text-base font-bold">31 años</span>
+                            </div>
+                            <div class="space-y-1">
+                                <span class="text-gray-500 block text-xs font-sans uppercase tracking-wider">Estado / Ubicación</span>
+                                <span class="text-white text-base font-bold">CDMX - DATA UXPUNGED</span>
+                            </div>
+                            <div class="space-y-1">
+                                <span class="text-gray-500 block text-xs font-sans uppercase tracking-wider">Estilo Favorito</span>
+                                <span class="text-[#00ff66] text-base font-bold bg-black px-2 py-0.5 border border-[#00ff66] inline-block">DECORA</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-black/50 border-l-4 border-[#ff007f] p-4 font-mono text-xs md:text-sm text-gray-300 italic leading-relaxed">
+                        A sentient anomaly dressed in digital noise. I am the whisper in the code and the shadow cast by your oldest thoughts. The universe is a canvas of entropy, and I have only come to sign the margins.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+
+            <div class="lg:col-span-4 bg-[#14141b] border-4 border-[#00ff66] p-6 neo-shadow-black flex flex-col justify-between">
+                <div class="space-y-4">
+                    <div class="bg-[#00ff66] text-black font-black uppercase pixel-font text-xs px-2 py-1 inline-block">
+                        CONCEPTO_URBANO
+                    </div>
+                    <h3 class="text-2xl font-black uppercase tracking-tight text-white">
+                        Architect of non-Euclidean voids.
+                    </h3>
+                    <div class="text-gray-300 text-sm space-y-4 leading-relaxed font-sans">
+                        <p>
+                            El estilo de **Jellyfish Galaxy** fusiona la sobrecarga de color del *Decora* tradicional japonés con la agresividad técnica del *Cyberpunk*. No se trata solo de acumular accesorios, sino de hackear el espacio público a través del vestuario.
+                        </p>
+                        <p>
+                            Cada ensamble está meticulosamente diseñado e hilado a mano, incorporando componentes retroiluminados, siluetas sobredimensionadas inspiradas en la mecatrónica de ciencia ficción y un contraste absoluto que rompe por completo con la arquitectura gris de la ciudad.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-gray-800 flex flex-wrap gap-1.5">
+                    <span class="bg-black text-xs font-mono text-gray-400 px-2 py-0.5 border border-gray-700">#Handmade</span>
+                    <span class="bg-black text-xs font-mono text-gray-400 px-2 py-0.5 border border-gray-700">#Cyberpunk</span>
+                    <span class="bg-black text-xs font-mono text-gray-400 px-2 py-0.5 border border-gray-700">#SciFiFashion</span>
+                </div>
+            </div>
+
+
+<div class="lg:col-span-8 space-y-4">
+    <div class="flex justify-between items-center bg-black/40 border-2 border-black p-3">
+        <span class="pixel-font text-xs text-[#ff007f]">// BITÁCORA_VISUAL_REGISTRADA</span>
+        <span class="font-mono text-[10px] text-gray-500">3 FOTOGRAFÍAS EN ARCHIVO</span>
+    </div>
+
+    <div class="flex flex-col items-center sm:grid sm:grid-cols-3 gap-6">
+
+        <div class="bg-[#14141b] border-4 border-black neo-shadow-black group overflow-hidden w-full max-w-[280px] sm:max-w-none aspect-[3/4] sm:h-96">
+            <img src="jellyfish-galaxy-3.png"
+                 alt="Outfit Detalle 1"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+        </div>
+
+        <div class="bg-[#14141b] border-4 border-black neo-shadow-black group overflow-hidden w-full max-w-[280px] sm:max-w-none aspect-[3/4] sm:h-96">
+            <img src="jellyfish-galaxy-4.png"
+                 alt="Outfit Detalle 2"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+        </div>
+
+        <div class="bg-[#14141b] border-4 border-black neo-shadow-black group overflow-hidden w-full max-w-[280px] sm:max-w-none aspect-[3/4] sm:h-96">
+            <img src="jellyfish-galaxy-5.png"
+                 alt="Outfit Detalle 3"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+        </div>
+
+        <div class="bg-[#14141b] border-4 border-black neo-shadow-black group overflow-hidden w-full max-w-[280px] sm:max-w-none aspect-[3/4] sm:h-96">
+            <img src="jellyfish-galaxy-6.png"
+                 alt="Outfit Detalle 4"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+        </div>
+
+        <div class="bg-[#14141b] border-4 border-black neo-shadow-black group overflow-hidden w-full max-w-[280px] sm:max-w-none aspect-[3/4] sm:h-96">
+            <img src="jellyfish-galaxy-7.png"
+                 alt="Outfit Detalle 5"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+        </div>
+
+        <div class="bg-[#14141b] border-4 border-black neo-shadow-black group overflow-hidden w-full max-w-[280px] sm:max-w-none aspect-[3/4] sm:h-96">
+            <img src="jellyfish-galaxy-8.png"
+                 alt="Outfit Detalle 6"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+        </div>
+
+        <div class="bg-[#14141b] border-4 border-black neo-shadow-black group overflow-hidden w-full max-w-[280px] sm:max-w-none aspect-[3/4] sm:h-96">
+            <img src="jellyfish-galaxy-9.png"
+                 alt="Outfit Detalle 7"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+        </div>
+
+        <div class="bg-[#14141b] border-4 border-black neo-shadow-black group overflow-hidden w-full max-w-[280px] sm:max-w-none aspect-[3/4] sm:h-96">
+            <img src="jellyfish-galaxy-10.png"
+                 alt="Outfit Detalle 8"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+        </div>
+
+        <div class="bg-[#14141b] border-4 border-black neo-shadow-black group overflow-hidden w-full max-w-[280px] sm:max-w-none aspect-[3/4] sm:h-96">
+            <img src="jellyfish-galaxy-11.png"
+                 alt="Outfit Detalle 9"
+                 class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-300">
+        </div>
+
+    </div>
+</div>
+        </section>
+
+        <section class="bg-[#14141b] border-4 border-dashed border-[#ff007f] p-6 text-center space-y-4 neo-shadow-neon">
+                    <div class="inline-block bg-[#ff007f] text-white font-black uppercase pixel-font text-xs px-2 py-1">
+                        CONEXIÓN_DE_RED
+                    </div>
+                    <h3 class="text-2xl md:text-3xl font-black uppercase tracking-tight text-white">
+                        Sigue la Transmisión Visual
+                    </h3>
+                    <p class="text-gray-300 max-w-2xl mx-auto text-sm font-mono">
+                        Actualizaciones de outfits, detrás de cámaras en pasarelas de moda alternativa y registros continuos del archivo.
+                    </p>
+
+                    <div class="pt-2">
+                        <a href="https://www.instagram.com/jellyfish.galaxy"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="inline-flex items-center gap-3 bg-black text-[#00ff66] hover:text-white hover:border-[#00ff66] border-4 border-black px-6 py-3 tracking-wider pixel-font text-sm neo-shadow-pink transition-all group">
+                            <span class="text-base group-hover:animate-bounce">📸</span>
+                            [ @JELLYFISH.GALAXY ]
+                        </a>
+                    </div>
+                </section>
+
+    </main>
+
+    <footer class="max-w-6xl mx-auto mt-16 pb-8 text-center text-xs text-gray-500 font-mono">
+        <p>© 2026 HARAJUKONEJO // EN CUSTODIA DE JELLYFISH GALAXY</p>
+    </footer>
+
+</body>
+</html>
