@@ -7,7 +7,7 @@
 
     <!--Favicon-->
     <link rel="icon" href="imgs/harajukonejo-ico.ico" type="image/ico">
-    
+
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=DotGothic16&display=swap" rel="stylesheet">
 
@@ -54,7 +54,7 @@
         <h1 class="text-xl md:text-2xl font-bold uppercase tracking-wider pixel-font text-black hidden sm:block">
             HARAJUKONEJO_FEED
         </h1>
-        <button class="bg-[#00ff66] text-black font-bold px-4 py-2 border-2 border-black neo-shadow hover:translate-y-1 hover:shadow-none transition-all uppercase text-sm">
+        <button id="share-btn" class="bg-[#00ff66] text-black font-bold px-4 py-2 border-2 border-black neo-shadow transition-all uppercase text-sm">
             Share_ ★
         </button>
     </header>
@@ -174,6 +174,53 @@ El bloque abrió con el paso de las mahou shoujo, quienes lucieron outfits lleno
             </div>
         </a>
     </section>
+
+    <script>
+        const shareBtn = document.getElementById('share-btn');
+
+        shareBtn.addEventListener('click', async () => {
+            const shareData = {
+                title: 'Harajuku Distopía // Harajukonejo Land',
+                text: 'Echa un vistazo a esta crónica sobre identidades en resistencia y moda urbana japonesa en México.',
+                url: window.location.href // Captura dinámicamente la URL real de la página
+            };
+
+            // 1. Intentar compartir usando la API nativa (Móviles / Navegadores modernos)
+            if (navigator.share) {
+                try {
+                    await navigator.share(shareData);
+                    console.log('SYS_LOG: Contenido compartido de forma nativa.');
+                } catch (err) {
+                    console.log('SYS_LOG: Acción cancelada o error:', err);
+                }
+            } else {
+                // 2. Fallback: Copiar al portapapeles si no hay soporte nativo
+                try {
+                    await navigator.clipboard.writeText(shareData.url);
+
+                    // Almacenar el estado visual original
+                    const originalText = shareBtn.innerHTML;
+
+                    // Aplicar mutación estética Cyberpunk temporal (2 segundos)
+                    shareBtn.innerHTML = 'LINK_COPIED_';
+                    shareBtn.style.backgroundColor = '#black';      // Fondo negro
+                    shareBtn.style.color = '#ff007f';            // Texto Rosa Neón
+                    shareBtn.style.borderColor = '#ff007f';      // Borde Rosa Neón
+
+                    setTimeout(() => {
+                        // Restaurar los estilos originales definidos por Tailwind
+                        shareBtn.innerHTML = originalText;
+                        shareBtn.style.backgroundColor = '';
+                        shareBtn.style.color = '';
+                        shareBtn.style.borderColor = '';
+                    }, 2000);
+
+                } catch (err) {
+                    alert('CRITICAL_ERR: No se pudo copiar el enlace al sistema.');
+                }
+            }
+        });
+    </script>
 
     <footer class="max-w-4xl mx-auto mt-12 text-center text-xs text-gray-500 font-mono">
         <p>© 2026 HARAJUKONEJO // FROM MEXICO CITY WITH LOVE</p>
