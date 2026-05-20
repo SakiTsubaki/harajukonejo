@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archivo de Artículos // Harajukonejo Land</title>
+
+    <link rel="icon" href="imgs/harajukonejo-ico.ico" type="image/ico">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=DotGothic16&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #0d0d11;
+            background-image: linear-gradient(rgba(0, 255, 102, 0.05) 2px, transparent 2px), linear-gradient(90deg, rgba(0, 255, 102, 0.05) 2px, transparent 2px);
+            background-size: 25px 25px;
+        }
+        .pixel-font {
+            font-family: 'DotGothic16', sans-serif;
+        }
+        .neo-shadow-black {
+            box-shadow: 6px 6px 0px 0px #000;
+        }
+        .neo-shadow-pink {
+            box-shadow: 6px 6px 0px 0px #ff007f;
+        }
+        .neo-shadow-neon {
+            box-shadow: 6px 6px 0px 0px #00ff66;
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0d0d11;
+            border-left: 4px solid #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ff007f;
+            border: 3px solid #0d0d11;
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen p-4 md:p-8 selection:bg-[#00ff66] selection:text-black">
+
+    <header class="max-w-5xl mx-auto mb-10 flex flex-col sm:flex-row justify-between items-center bg-[#ff007f] border-4 border-black p-4 neo-shadow-black gap-4">
+        <div class="flex items-center gap-3">
+            <span class="text-2xl animate-spin" style="animation-duration: 10s;">✦</span>
+            <h1 class="text-2xl font-black uppercase tracking-wider pixel-font text-black">
+                HARAJUKONEJO_CORE
+            </h1>
+        </div>
+        <nav class="flex flex-wrap gap-2 text-xs font-mono font-bold">
+            <a href="#" class="bg-black text-white px-3 py-1 border-2 border-black hover:bg-white hover:text-black transition-colors">ARTÍCULOS</a>
+            <a href="shops.html" class="bg-transparent text-black px-3 py-1 border-2 border-transparent hover:border-black transition-colors">RADAR_STORES</a>
+            <a href="lookbook.html" class="bg-transparent text-black px-3 py-1 border-2 border-transparent hover:border-black transition-colors">LOOKBOOK</a>
+        </nav>
+    </header>
+
+    <main class="max-w-5xl mx-auto space-y-12">
+
+        <section class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+            <div class="md:col-span-8 bg-[#14141b] border-4 border-black p-6 md:p-8 neo-shadow-neon flex flex-col justify-center">
+                <span class="text-[#00ff66] pixel-font text-sm mb-2 block">// MAIN_DATABASE_FEED</span>
+                <h2 class="text-4xl md:text-5xl font-black uppercase tracking-tight leading-none mb-4">
+                    BITÁCORA DE <br>
+                    <span class="text-black bg-[#00ff66] px-2 inline-block mt-2 border-2 border-black transform rotate-1">ARTÍCULOS_</span>
+                </h2>
+                <p class="text-gray-350 text-sm md:text-base leading-relaxed">
+                    Un espacio descentralizado y libre enfocado en documentar la moda alternativa, manifiestos visuales, guías técnicas de confección y crónicas de resistencia urbana en México. Las actualizaciones se apilan de forma automática.
+                </p>
+            </div>
+
+            <div class="md:col-span-4 bg-black border-4 border-black p-6 neo-shadow-pink font-mono text-xs text-[#ff007f] flex flex-col justify-between space-y-4">
+                <div>
+                    <p class="text-white font-bold mb-2 pixel-font text-sm uppercase">// SYS_INFO</p>
+                    <p>> COMPILING_NODES... OK</p>
+                    <p>> TOTAL_POSTS: 04</p>
+                    <p>> LAST_UPDATE: MAY_2026</p>
+                </div>
+                <div class="bg-[#14141b] p-2 border border-gray-800 text-[11px] text-gray-400">
+                    La moda comercial uniforma el entorno; nuestras costuras y neones lo sabotean.
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-4">
+            <div class="flex items-center gap-2 text-xs font-mono tracking-widest text-gray-400">
+                <span class="inline-block w-2 h-2 bg-[#00ff66] animate-pulse"></span>
+                ULTIMO_DROP // EN LÍNEA
+            </div>
+
+            <div class="bg-[#14141b] border-4 border-black neo-shadow-black overflow-hidden group hover:border-[#00ff66] transition-colors grid grid-cols-1 lg:grid-cols-12">
+                <div class="lg:col-span-5 bg-gray-900 border-b-4 lg:border-b-0 lg:border-r-4 border-black relative overflow-hidden h-64 lg:h-auto">
+                    <img src="imgs/neon-guide-cover.png" alt="Cover del artículo" class="w-full h-full object-cover group-hover:scale-102 transition-transform duration-300">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 lg:opacity-40"></div>
+                    <span class="absolute top-4 left-4 bg-[#00ff66] text-black border-2 border-black font-black uppercase px-2 py-0.5 text-[10px] tracking-wider font-mono">
+                        NUEVO // VOL. 04
+                    </span>
+                </div>
+
+                <div class="lg:col-span-7 p-6 md:p-8 flex flex-col justify-between space-y-6">
+                    <div class="space-y-3">
+                        <div class="text-xs font-mono text-gray-400 flex justify-between">
+                            <span>AUTOR: JELLYFISH GALAXY</span>
+                            <span>FECHA: 12/05/2026</span>
+                        </div>
+                        <h3 class="text-3xl font-black uppercase text-white group-hover:text-[#00ff66] transition-colors leading-tight">
+                            Neon Crafting Guide: Iluminación de Alta Intensidad en Props
+                        </h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">
+                            Una bitácora técnica de ensamble paso a paso para soldar, aislar e integrar mangueras de neón flexible de 12V directamente sobre textiles sintéticos y armaduras artesanales pesadas. No ocultes el cableado.
+                        </p>
+                    </div>
+
+                    <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-dashed border-gray-800">
+                        <div class="flex gap-1">
+                            <span class="bg-black text-[#00ff66] text-[9px] font-mono px-2 py-0.5 border border-[#00ff66]">TUTORIAL</span>
+                            <span class="bg-black text-white text-[9px] font-mono px-2 py-0.5 border border-gray-700">CYBER_DECORA</span>
+                        </div>
+                        <a href="neon-crafting-guide.html" class="bg-white text-black text-xs font-black uppercase border-4 border-black px-4 py-2 pixel-font neo-shadow-neon group-hover:bg-[#00ff66] hover:translate-y-0.5 hover:shadow-none transition-all">
+                            LEER_REPORTE →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="space-y-6">
+            <h3 class="text-xl font-black uppercase pixel-font text-[#ff007f] border-b-4 border-black pb-2 flex items-center justify-between">
+                <span>// ARCHIVOS_HISTÓRICOS</span>
+                <span class="text-xs font-mono text-gray-500">APILADOS POR FECHA</span>
+            </h3>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                <div class="bg-[#14141b] border-4 border-black neo-shadow-black p-6 flex flex-col justify-between group hover:border-[#ff007f] transition-colors">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center text-[10px] font-mono text-gray-500">
+                            <span>VOL. 03 // CRÓNICA</span>
+                            <span>FECHA: 18/05/2026</span>
+                        </div>
+                        <h4 class="text-2xl font-bold uppercase text-white group-hover:text-[#ff007f] transition-colors leading-tight">
+                          <a href="harajuku-distopia.html">  Harajuku Distopía: Identidades en Resistencia</a>
+                        </h4>
+                        <p class="text-gray-400 text-xs leading-relaxed line-clamp-3">
+                            Análisis de la pasarela y performance organizado por Mexico Decadence en la Yume Convention. La moda maximalista como un escudo y escudo político frente al asfalto gris.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-4 border-t border-gray-800 flex justify-between items-center">
+                        <span class="bg-black text-white text-[9px] font-mono px-2 py-0.5 border border-gray-700">PERFORMANCE</span>
+                        <a href="harajuku-distopia.html" class="text-xs font-black uppercase pixel-font text-white hover:text-[#ff007f] underline decoration-2">
+                            [ COMPILAR_NODO ]
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-[#14141b] border-4 border-black neo-shadow-black p-6 flex flex-col justify-between group hover:border-[#ff007f] transition-colors">
+                    <div class="space-y-4">
+                        <div class="flex justify-between items-center text-[10px] font-mono text-gray-500">
+                            <span>VOL. 02 // ARTÍCULO</span>
+                            <span>FECHA: 05/04/2026</span>
+                        </div>
+                        <h4 class="text-2xl font-bold uppercase text-white group-hover:text-[#ff007f] transition-colors leading-tight">
+                          <a href="harajuku-japon.html">  El Peso Político del Harajuku </a>
+                        </h4>
+                        <p class="text-gray-400 text-xs leading-relaxed line-clamp-3">
+                            ¿Qué significa ocupar la calle vistiendo estéticas radicales e hiper-saturadas en una ciudad hostil? El derecho a la libre expresión corporal transformado en un acto de protesta urbana.
+                        </p>
+                    </div>
+                    <div class="pt-6 mt-4 border-t border-gray-800 flex justify-between items-center">
+                        <span class="bg-black text-white text-[9px] font-mono px-2 py-0.5 border border-gray-700">MANIFIESTO</span>
+                        <a href="#" class="text-xs font-black uppercase pixel-font text-white hover:text-[#ff007f] underline decoration-2">
+                            [ COMPILAR_NODO ]
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-[#14141b] border-4 border-black neo-shadow-black p-6 flex flex-col justify-between group hover:border-[#ff007f] transition-colors md:col-span-2">
+                    <div class="grid grid-cols-1 md:grid-cols-12 gap-4 items-center">
+                        <div class="md:col-span-8 space-y-2">
+                            <div class="flex gap-4 text-[10px] font-mono text-gray-500">
+                                <span>VOL. 01 // BITÁCORA_DE_VIAJE</span>
+                                <span>FECHA: 29/03/2026</span>
+                            </div>
+                            <h4 class="text-xl font-bold uppercase text-white group-hover:text-[#00ff66] transition-colors">
+                                De Akihabara a la Narvarte: Contrabando de Materiales Japoneses
+                            </h4>
+                            <p class="text-gray-400 text-xs leading-relaxed line-clamp-2">
+                                Crónica de exploración por tiendas de modelismo, telas alternativas y bazares ocultos en Tokio y Osaka para nutrir el stock creativo artesanal local.
+                            </p>
+                        </div>
+                        <div class="md:col-span-4 flex justify-end">
+                            <a href="#" class="w-full md:w-auto text-center bg-transparent hover:bg-white hover:text-black text-white text-xs font-black uppercase border-2 border-white px-4 py-2 transition-all">
+                                LEER_BITÁCORA_01
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="bg-[#1c1c24] border-4 border-dashed border-[#00ff66] p-6 md:p-8 grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+            <div class="lg:col-span-7 space-y-2">
+                <h3 class="text-2xl font-black uppercase pixel-font text-[#00ff66]">
+                    ¿Quieres recibir las alertas de nuevos artículos?
+                </h3>
+                <p class="text-gray-350 text-xs">
+                    No dependemos de las redes sociales convencionales ni de sus algoritmos restrictivos. Déjanos tu correo y te notificaremos mediante un ping directo cada vez que un nuevo bloque sea compilado.
+                </p>
+            </div>
+            <div class="lg:col-span-5">
+                <form class="flex flex-col sm:flex-row gap-2" onsubmit="event.preventDefault(); alert('Nodo de suscripción enlazado encriptadamente.');">
+                    <input type="email" placeholder="TU_CORREO@DOMAIN.COM" required
+                           class="flex-1 bg-black border-4 border-black text-[#00ff66] placeholder-gray-600 font-mono text-xs p-3 focus:outline-none focus:border-[#00ff66]">
+                    <button type="submit" class="bg-[#00ff66] text-black font-black uppercase border-4 border-black px-4 py-2 text-xs tracking-wider pixel-font neo-shadow-black hover:translate-y-0.5 hover:shadow-none transition-all">
+                        SUBSCRIBIR_
+                    </button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="max-w-5xl mx-auto mt-16 pb-8 text-center text-xs text-gray-500 font-mono">
+        <p>© 2026 HARAJUKONEJO // FEED DE ALMACENAMIENTO AUTÓNOMO</p>
+    </footer>
+
+</body>
+</html>
