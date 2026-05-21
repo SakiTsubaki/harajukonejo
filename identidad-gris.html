@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo gris // Harajukonejo Land</title>
+
+    <!--Favicon-->
+    <link rel="icon" href="imgs/harajukonejo-ico.ico" type="image/ico">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=DotGothic16&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #0d0d11;
+            background-image: radial-gradient(#ff007f 0.5px, transparent 0.5px), radial-gradient(#00ff66 0.5px, #0d0d11 0.5px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 10px;
+        }
+        .pixel-font {
+            font-family: 'DotGothic16', sans-serif;
+        }
+        .neo-shadow {
+            box-shadow: 5px 5px 0px 0px #000;
+        }
+        .neo-shadow-pink {
+            box-shadow: 5px 5px 0px 0px #ff007f;
+        }
+        .neo-shadow-neon {
+            box-shadow: 5px 5px 0px 0px #00ff66;
+        }
+        /* Custom scrollbar radical */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0d0d11;
+            border-left: 4px border #000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #ff007f;
+            border: 3px solid #0d0d11;
+        }
+    </style>
+</head>
+<body class="text-white min-h-screen p-4 md:p-8 selection:bg-[#00ff66] selection:text-black">
+
+    <header class="max-w-4xl mx-auto mb-8 flex justify-between items-center bg-[#ff007f] border-4 border-black p-4 neo-shadow">
+        <a href="index.html" class="text-2xl font-bold uppercase tracking-wider pixel-font text-black hover:text-white transition-colors">
+            ← INDEX_
+        </a>
+        <h1 class="text-xl md:text-2xl font-bold uppercase tracking-wider pixel-font text-black hidden sm:block">
+            HARAJUKONEJO_FEED
+        </h1>
+        <button id="share-btn" class="bg-[#00ff66] text-black font-bold px-4 py-2 border-2 border-black neo-shadow transition-all uppercase text-sm">
+            Share_ ★
+        </button>
+    </header>
+
+    <main class="max-w-4xl mx-auto bg-[#14141b] border-4 border-[#00ff66] neo-shadow overflow-hidden">
+
+        <div class="border-b-4 border-black p-6 md:p-10 bg-gradient-to-br from-[#14141b] to-[#1c1c24] relative">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="bg-[#ff007f] text-black text-xs font-bold px-2 py-1 uppercase border-2 border-black">
+                    ARTÍCULO / CRÍTICA
+                </span>
+                <span class="bg-white text-black text-xs font-bold px-2 py-1 uppercase border-2 border-black pixel-font">
+                    VOL. 04
+                </span>
+            </div>
+
+            <h1 class="text-4xl md:text-6xl font-black uppercase leading-none mb-6 tracking-tight">
+                LA TIRANÍA DE <br>
+                <span class="text-[#00ff66] bg-black px-2 inline-block my-1 border-2 border-[#00ff66]">LA ESTÉTICA  </span> <br>
+                NEUTRA
+            </h1>
+
+            <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t-2 border-dashed border-gray-800 text-xs font-mono text-gray-400">
+                <div>POR: <span class="text-[#ff007f] font-bold">JELLYFISH GALAXY</span></div>
+                <div>PUBLICADO: <span class="text-white">21 / 05 / 2026</span></div>
+                <div>LECTURA: <span class="text-[#00ff66]">8 MIN_</span></div>
+            </div>
+        </div>
+
+        <div class="p-6 md:p-10 space-y-8 text-gray-300 text-base md:text-lg leading-relaxed font-sans">
+
+            <p class="text-white font-bold text-xl border-l-4 border-[#ff007f] pl-4 italic">
+                Cómo el mundo se volvió gris para apagar tu mente.
+            </p>
+
+            <p>
+              Entras a una cafetería moderna. Las paredes son de hormigón pulido, las sillas son de madera pálida y los baristas visten delantales de lino beige. Abres Instagram. El feed de los creadores de contenido más populares parece una paleta de sombras de ojos "nude": blanco roto, arena, gris taupe y negro sutil. Vas a comprar ropa y las tiendas están inundadas de colecciones cápsula monocromáticas.
+<br><br>
+Vivimos en la era de la estética neutra. Nos la venden como el epítome de la madurez, la elegancia y la paz mental. Pero, ¿y si esta obsesión por borrar el color fuera, en realidad, el síntoma visual de una sociedad que busca anestesiar nuestra individualidad y nuestro pensamiento crítico?
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 my-8 items-center bg-black p-4 border-4 border-black neo-shadow-pink">
+                <div class="border-4 border-black h-64 bg-gray-900 relative overflow-hidden">
+                    <img src="imgs/mundo-gris-1.png" alt="IDENTIDADES HARAJUKU" class="w-full h-full object-cover">
+                    <div class="absolute top-2 left-2 bg-[#00ff66] text-black text-xs px-2 py-0.5 font-bold border border-black pixel-font">
+                        FIG 03. DETAIL
+                    </div>
+                </div>
+                <div class="space-y-3">
+                    <h3 class="text-[#ff007f] font-black text-xl uppercase pixel-font">// _PÉRDIDA_DE_IDENTIDAD</h3>
+                    <p class="text-xs text-gray-400">
+                        La pérdida de la individualidad sucede sin darte cuenta.
+                    </p>
+                    <div class="bg-[#14141b] border-2 border-dashed border-gray-700 p-2 text-[11px] font-mono text-center text-[#00ff66]">
+                        ¿QUIERES SER GRIS?
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-2xl md:text-3xl font-black text-white uppercase tracking-tight pt-4 border-b-2 border-gray-800 pb-2">
+                <span class="text-[#00ff66] pixel-font">01_</span> De la armonía visual a la lobotomía cultural
+            </h2>
+
+            <p>
+              El minimalismo, en su origen, era una filosofía de liberación: deshacerse del exceso material para concentrarse en lo esencial. Sin embargo, el capitalismo tardío y los algoritmos de las redes sociales lo han secuestrado, transformándolo en un estándar de uniformidad obligatoria.
+<br><br>
+              Cuando todo el mundo consume el mismo diseño escandinavo, vive en los mismos espacios higienizados y viste con los mismos tonos apagados, ocurre un fenómeno psicológico sutil: la resistencia a la diferencia.
+<br><br>
+              El peligro de lo neutro: El color, históricamente, ha sido sinónimo de identidad, rebelión, folclore y emoción. Al eliminarlo, eliminamos los contrastes. Y una mente que se acostumbra a no ver contrastes en su entorno, pronto deja de buscarlos en sus ideas.
+            </p>
+
+            <blockquote class="bg-[#ff007f] text-black p-6 border-4 border-black neo-shadow font-bold text-lg my-6 relative">
+                Convertirse en un "ser gris" no es solo una cuestión de armario; es un estado mental. La sociedad actual premia la predictibilidad. Las grandes corporaciones y los algoritmos no quieren individuos ruidosos, complejos o contradictorios; quieren usuarios predecibles.
+                <span class="absolute right-2 bottom-0 text-4xl opacity-3xl pixel-font">★</span>
+            </blockquote>
+
+            <p>
+              El "ser gris" y la muerte del pensamiento crítico
+<br><br>
+La pérdida de la individualidad se procesa en tres etapas silenciosas:
+<br><br>
+La comodidad de la masa: Vestir, pensar y hablar como el promedio reduce el riesgo de ser cancelado o juzgado. El gris es el camuflaje perfecto para los cobardes intelectuales.
+<br><br>
+La simplificación del debate: En un mundo monocromático, las ideas se vuelven binarias (blanco o negro, con nosotros o contra nosotros). Se pierde la capacidad de habitar los "matices", que es donde realmente reside el pensamiento crítico.
+<br><br>
+La anestesia emocional: Los colores vibrantes estimulan el cerebro. El exceso de neutralidad genera una calma artificial que, a largo plazo, se convierte en apatía. Y una ciudadanía apática no cuestiona el statu quo.
+            </p>
+
+        </div>
+
+        <div class="border-t-4 border-black p-6 bg-white text-black flex flex-col sm:flex-row justify-between items-center gap-4">
+            <div class="flex items-center gap-3">
+                <div class="w-10 h-10 bg-[#ff007f] border-2 border-black rounded-full flex items-center justify-center font-bold text-white pixel-font">
+                    JG
+                </div>
+                <div>
+                    <p class="text-xs font-mono text-gray-500">ESCRITO POR</p>
+                    <p class="font-bold uppercase tracking-tight text-sm">Jellyfish Galaxy</p>
+                </div>
+            </div>
+
+            <div class="flex gap-2 w-full sm:w-auto">
+                <button class="flex-1 sm:flex-none bg-[#00ff66] text-black font-black px-6 py-2 border-4 border-black neo-shadow hover:translate-y-0.5 hover:shadow-[2px_2px_0px_0px_#000] active:translate-y-1 active:shadow-none transition-all text-xs uppercase tracking-wider">
+                    ★ CLAP_ART
+                </button>
+                <button class="flex-1 sm:flex-none bg-black text-white font-black px-4 py-2 border-4 border-black neo-shadow hover:translate-y-0.5 hover:shadow-[2px_2px_0px_0px_#000] active:translate-y-1 active:shadow-none transition-all text-xs uppercase">
+                    NEXT_ART →
+                </button>
+            </div>
+        </div>
+
+    </main>
+
+    <section class="max-w-4xl mx-auto mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <a href="#" class="bg-[#14141b] border-4 border-black p-4 neo-shadow hover:border-[#ff007f] transition-colors flex justify-between items-center">
+            <div>
+                <span class="text-xs font-mono text-[#ff007f] block">< ANTERIOR</span>
+                <span class="font-bold text-sm uppercase">02/ El Peso Político del Harajuku</span>
+            </div>
+            <span class="text-xl">←</span>
+        </a>
+        <a href="#" class="bg-[#14141b] border-4 border-black p-4 neo-shadow hover:border-[#00ff66] transition-colors flex justify-between items-center text-right">
+            <span class="text-xl">→</span>
+            <div>
+                <span class="text-xs font-mono text-[#00ff66] block">SIGUIENTE ></span>
+                <span class="font-bold text-sm uppercase">04/ Neon Crafting Guide</span>
+            </div>
+        </a>
+    </section>
+
+    <script>
+        const shareBtn = document.getElementById('share-btn');
+
+        shareBtn.addEventListener('click', async () => {
+            const shareData = {
+                title: 'Harajuku Distopía // Harajukonejo Land',
+                text: 'Echa un vistazo a esta crónica sobre identidades en resistencia y moda urbana japonesa en México.',
+                url: window.location.href // Captura dinámicamente la URL real de la página
+            };
+
+            // 1. Intentar compartir usando la API nativa (Móviles / Navegadores modernos)
+            if (navigator.share) {
+                try {
+                    await navigator.share(shareData);
+                    console.log('SYS_LOG: Contenido compartido de forma nativa.');
+                } catch (err) {
+                    console.log('SYS_LOG: Acción cancelada o error:', err);
+                }
+            } else {
+                // 2. Fallback: Copiar al portapapeles si no hay soporte nativo
+                try {
+                    await navigator.clipboard.writeText(shareData.url);
+
+                    // Almacenar el estado visual original
+                    const originalText = shareBtn.innerHTML;
+
+                    // Aplicar mutación estética Cyberpunk temporal (2 segundos)
+                    shareBtn.innerHTML = 'LINK_COPIED_';
+                    shareBtn.style.backgroundColor = '#black';      // Fondo negro
+                    shareBtn.style.color = '#ff007f';            // Texto Rosa Neón
+                    shareBtn.style.borderColor = '#ff007f';      // Borde Rosa Neón
+
+                    setTimeout(() => {
+                        // Restaurar los estilos originales definidos por Tailwind
+                        shareBtn.innerHTML = originalText;
+                        shareBtn.style.backgroundColor = '';
+                        shareBtn.style.color = '';
+                        shareBtn.style.borderColor = '';
+                    }, 2000);
+
+                } catch (err) {
+                    alert('CRITICAL_ERR: No se pudo copiar el enlace al sistema.');
+                }
+            }
+        });
+    </script>
+
+    <footer class="max-w-4xl mx-auto mt-12 text-center text-xs text-gray-500 font-mono">
+        <p>© 2026 HARAJUKONEJO // FROM MEXICO CITY WITH LOVE</p>
+    </footer>
+
+</body>
+</html>
