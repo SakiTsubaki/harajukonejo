@@ -35,20 +35,35 @@
 <body class="text-white min-h-screen p-4 md:p-8 selection:bg-[#00ff66] selection:text-black">
 
     <!-- HEADER / NAV -->
-    <header class="max-w-6xl mx-auto mb-8 flex justify-between items-center bg-[#ff007f] border-4 border-black p-4 neo-shadow">
-        <h1 class="text-2xl md:text-3xl font-bold uppercase tracking-wider pixel-font text-black">
-            自分流 <span class="text-[#00ff66]">HARAJUKONEJO_</span>
-        </h1>
-        <nav class="hidden md:flex gap-6 text-black font-bold">
-            <a href="feed.html" class="hover:underline decoration-4 decoration-[#00ff66]">ARTÍCULOS</a>
-              <a href="events.html" class="hover:underline decoration-4 decoration-[#00ff66]">EVENTOS</a>
-            <a href="lookbook.html" class="hover:underline decoration-4 decoration-[#00ff66]">LOOKBOOK</a>
-            <a href="shops.html" class="hover:underline decoration-4 decoration-[#00ff66]">SHOPS</a>
-        </nav>
-        <button onclick="toggleModal(true)" class="bg-[#00ff66] text-black font-bold px-4 py-2 border-2 border-black neo-shadow hover:translate-y-1 hover:shadow-none transition-all uppercase text-sm">
-            Join the Club ★
-        </button>
-    </header>
+    <header class="max-w-6xl mx-auto mb-8 flex justify-between items-center bg-[#ff007f] border-4 border-black p-4 neo-shadow relative">
+            <h1 class="text-2xl md:text-3xl font-bold uppercase tracking-wider pixel-font text-black">
+                <a href="index.html">自分流 <span class="text-[#00ff66]">HARAJUKONEJO_</span></a>
+            </h1>
+
+            <nav class="hidden md:flex gap-6 text-black font-bold">
+                <a href="feed.html" class="hover:underline decoration-4 decoration-[#00ff66]">ARTÍCULOS</a>
+                <a href="events.html" class="hover:underline decoration-4 decoration-[#00ff66]">EVENTOS</a>
+                <a href="lookbook.html" class="hover:underline decoration-4 decoration-[#00ff66]">LOOKBOOK</a>
+                <a href="shops.html" class="hover:underline decoration-4 decoration-[#00ff66]">SHOPS</a>
+            </nav>
+
+            <div class="flex items-center gap-2">
+                <button onclick="toggleModal(true)" class="bg-[#00ff66] text-black font-bold px-4 py-2 border-2 border-black neo-shadow hover:translate-y-1 hover:shadow-none transition-all uppercase text-sm">
+                    Join the Club ★
+                </button>
+
+                <button onclick="toggleMobileMenu()" class="md:hidden bg-white text-black font-bold p-2 border-2 border-black neo-shadow focus:outline-none text-xl">
+                    ☰
+                </button>
+            </div>
+
+            <nav id="mobile-menu" class="hidden absolute top-[calc(100%+4px)] left-[-4px] right-[-4px] bg-[#ff007f] border-4 border-black p-4 flex flex-col gap-4 text-black font-bold z-40 neo-shadow">
+                <a href="feed.html" class="border-b-2 border-black pb-2 hover:text-[#00ff66]">ARTÍCULOS</a>
+                <a href="events.html" class="border-b-2 border-black pb-2 hover:text-[#00ff66]">EVENTOS</a>
+                <a href="lookbook.html" class="border-b-2 border-black pb-2 hover:text-[#00ff66]">LOOKBOOK</a>
+                <a href="shops.html" class="hover:text-[#00ff66]">SHOPS</a>
+            </nav>
+        </header>
 
     <!-- MAIN BENTO GRID -->
     <main class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -188,6 +203,11 @@
             }
         `;
         document.head.appendChild(style);
+
+        function toggleMobileMenu() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        }
 
         function toggleModal(show) {
     const modal = document.getElementById('club-modal');
